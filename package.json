@@ -1,0 +1,14 @@
+{
+  "name": "fma",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "frontend": "npm start --prefix frontend",
+    "backend": "npm run dev --prefix backend",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.10"
+  }
+}
